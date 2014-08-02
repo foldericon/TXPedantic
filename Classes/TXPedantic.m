@@ -214,7 +214,6 @@ BOOL pedanticmyself = NO;
                 @[@"youre", @"you're"],
                 @[@"theyre", @"they're"],
                 @[@"arent", @"aren't"],
-                @[@"its", @"it's"],
                 @[@"wasnt", @"wasn't"],
                 @[@"werent", @"weren't"],
                 @[@"wont", @"won't"],
