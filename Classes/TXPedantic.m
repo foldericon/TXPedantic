@@ -202,6 +202,7 @@ BOOL pedanticmyself = NO;
                 @[@"im", @"I'm"],
                 @[@"i", @"I"],
                 @[@"thats", @"that's"],
+                @[@"theres", @"there's"],                
                 @[@"cant", @"can't"],
                 @[@"dont", @"don't"],
                 @[@"doesnt", @"doesn't"],
