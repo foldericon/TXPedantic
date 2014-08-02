@@ -147,18 +147,24 @@ BOOL pedanticmyself = NO;
     NSArray *aryMsg = [message split:@" "];
     
     int count = 0;
+
     for (int i=0; i<aryMsg.count; i++) {
 
         NSString *msg = aryMsg[i];
         
+        BOOL isLink = NO;
         // Check if current word is a hyperlink
         for (NSArray *ary in links) {
             NSRange range = NSRangeFromString(ary[0]);
-            if(count == range.location) {
-                continue;
+            if(count == (int)range.location) {
+                isLink = YES;
+                [words addObject:msg];
+                break;
             }
         }
-        count += msg.length;
+        count += msg.length+1;
+        if(isLink)
+            continue;
         
         // Check if current word is a nickname
         if([nicks containsObjectIgnoringCase:msg]) {
@@ -202,7 +208,7 @@ BOOL pedanticmyself = NO;
                 @[@"im", @"I'm"],
                 @[@"i", @"I"],
                 @[@"thats", @"that's"],
-                @[@"theres", @"there's"],                
+                @[@"theres", @"there's"],
                 @[@"cant", @"can't"],
                 @[@"dont", @"don't"],
                 @[@"doesnt", @"doesn't"],
