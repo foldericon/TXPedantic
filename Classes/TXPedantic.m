@@ -200,7 +200,6 @@ BOOL pedanticmyself = NO;
 - (NSArray *)wordList {
     return @[
                 @[@"im", @"I'm"],
-                @[@"ill", @"I'll"],
                 @[@"i", @"I"],
                 @[@"thats", @"that's"],
                 @[@"cant", @"can't"],
