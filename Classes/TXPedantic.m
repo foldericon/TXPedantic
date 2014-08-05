@@ -114,7 +114,7 @@ BOOL pedanticmyself = NO;
     if([command isNotEqualTo:@"PRIVMSG"])
         return input;
     
-    if(!pedanticenabled)
+    if(!pedanticmyself)
         return input;
     
     NSAttributedString *attributedString = input;

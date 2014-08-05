@@ -206,12 +206,7 @@
 				BUNDLE_LOADER = "/Applications/Textual 5.app/Contents/MacOS/Textual 5";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					/Applications/Textual,
-					"5.app/Contents/Frameworks/**",
-					"$(SYSTEM_APPS_DIR)/Textual",
-					5.app/Contents/Frameworks,
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Textual 5.app/Contents/Frameworks\"/**";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -232,12 +227,7 @@
 				BUNDLE_LOADER = "/Applications/Textual 5.app/Contents/MacOS/Textual 5";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					/Applications/Textual,
-					"5.app/Contents/Frameworks/**",
-					"$(SYSTEM_APPS_DIR)/Textual",
-					5.app/Contents/Frameworks,
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"/Applications/Textual 5.app/Contents/Frameworks\"/**";
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = "\"/Applications/Textual 5.app/Contents/Headers\"";
 				INFOPLIST_FILE = Resources/Info.plist;
