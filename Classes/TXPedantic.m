@@ -267,6 +267,9 @@ BOOL pedanticmyself = NO;
     if(string.length < 6)
         return NO;
     
+    // Remove punctuation
+    string = [[string componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@""];
+    
     // Remove Links
     NSString *originalString = string;
     for(NSArray *ary in links)
