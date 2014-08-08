@@ -167,8 +167,9 @@ BOOL pedanticmyself = NO;
             continue;
         
         // Check if current word is a nickname
-        if([nicks containsObjectIgnoringCase:msg]) {
-            [words addObject:[channel findMember:msg.lowercaseString].nickname];
+        NSString *str = [[msg stringByTrimmingCharactersInSet:[NSCharacterSet punctuationCharacterSet]] lowercaseString];
+        if([nicks containsObjectIgnoringCase:str]) {
+            [words addObject:[[channel findMember:str] nickname]];
         } else  {
             msg = [self correctWord:msg];
             if(shouldBeLowerCased)
